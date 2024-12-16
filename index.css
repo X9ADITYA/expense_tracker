@@ -1,0 +1,117 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ff6f61;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff9a9e;
+  box-shadow: 0 0 8px rgba(255, 105, 97, 0.5);
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease, transform 0.2s ease-in-out;
+  box-shadow: 0 6px 12px rgba(255, 105, 97, 0.4),
+    0 10px 20px rgba(255, 105, 97, 0.2);
+}
+
+button:hover {
+  background-color: #ff856b;
+  box-shadow: 0 10px 20px rgba(255, 133, 107, 0.5),
+    0 14px 28px rgba(255, 133, 107, 0.3);
+  transform: translateY(-3px) scale(1.05);
+}
+
+button:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 4px 8px rgba(255, 105, 97, 0.3);
+}
+
+button.green {
+  background-color: #4caf50;
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4),
+    0 10px 20px rgba(76, 175, 80, 0.2);
+}
+
+button.green:hover {
+  background-color: #66bb6a;
+  box-shadow: 0 10px 20px rgba(102, 187, 106, 0.5),
+    0 14px 28px rgba(102, 187, 106, 0.3);
+}
+
+button.blue {
+  background-color: #2196f3;
+  box-shadow: 0 6px 12px rgba(33, 150, 243, 0.4),
+    0 10px 20px rgba(33, 150, 243, 0.2);
+}
+
+button.blue:hover {
+  background-color: #42a5f5;
+  box-shadow: 0 10px 20px rgba(66, 165, 245, 0.5),
+    0 14px 28px rgba(66, 165, 245, 0.3);
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.expense-item {
+  background-color: #ffebee;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-container {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ff6f61;
+}
